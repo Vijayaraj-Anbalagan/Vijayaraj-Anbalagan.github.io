@@ -481,8 +481,7 @@ footer section Design
   -moz-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
   border-radius: 10px;
-  z-index: 99999999999;
- 
+  z-index: 99999999999 !important ;
 } 
 
 #btn-back-to-top:hover {
