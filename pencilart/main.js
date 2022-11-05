@@ -72,42 +72,59 @@ let response = document.getElementById('response');
 
 inBtn.addEventListener("click",() => {
 
+    let owner = "sunandha";
+    let Owner = "Sunandha";
+    let ownmsg = "Your the owner uh SO FREE"
     let base = 25;
     let high = 20;
     let numb = inTxt.value;
-    let final = numb.length;
+    let final = inTxt.value.length;
     let show = 1;
+  
 
-    if (inTxt="Vijay") {
-
-      response.innerText = `Your the Owner Soo,No Money`
+    if (numb===owner) {
       
-    } else {if (final < 5) {
+      response.innerText = ownmsg;
 
-      show = final*base
+    } else {
 
-      
-  } else {
-      
-      show = final*high
+      if (numb===Owner) {
 
-  }
+        response.innerText = ownmsg;
 
-  if (show >= 100) {
+        
+      } else {
 
-      response.innerText = `₹${show}+ Packaging`;
-      
-  } else {
+        
+      if (final < 5) {
 
-      show = 100;
-      response.innerText = `₹${show}+ Packaging`;
-      
-  }
+        show = final*base;
+   
+         
+     } else {
+         
+         show = final*high;
+   
+     }
+   
+     if (show >= 100) {
+   
+         response.innerText = `₹${show}+ Packaging`;
+         
+     } else {
+   
+         show = 100;
+         response.innerText = `₹${show}+ Packaging`;
+         
+     }
+    
+     
+        
+      }
       
     }
-    
-    
 
+    
 });
 
 
