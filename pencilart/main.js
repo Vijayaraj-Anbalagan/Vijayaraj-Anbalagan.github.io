@@ -78,26 +78,32 @@ inBtn.addEventListener("click",() => {
     let final = numb.length;
     let show = 1;
 
-    if (final < 5) {
+    if (inTxt="Vijay") {
 
-        show = final*base
+      response.innerText = `Your the Owner Soo,No Money`
+      
+    } else {if (final < 5) {
 
-        
-    } else {
-        
-        show = final*high
+      show = final*base
 
-    }
+      
+  } else {
+      
+      show = final*high
 
-    if (show >= 100) {
+  }
 
-        response.innerText = `₹${show}+ Packaging`;
-        
-    } else {
+  if (show >= 100) {
 
-        show = 100;
-        response.innerText = `₹${show}+ Packaging`;
-        
+      response.innerText = `₹${show}+ Packaging`;
+      
+  } else {
+
+      show = 100;
+      response.innerText = `₹${show}+ Packaging`;
+      
+  }
+      
     }
     
     
