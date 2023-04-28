@@ -13,7 +13,7 @@ html {
 body {
   padding: 0;
   line-height: 1.5;
-  background: #181a1b;
+  background: #1d2026;
 }
 
 body .noscroll {
@@ -364,7 +364,7 @@ a {
 }
 
 header {
-  background: #181a1b;
+  background: #1d2026;
   background-size: cover;
   min-height: 80vh;
   position: relative;
@@ -780,6 +780,10 @@ header .seperator-skew svg .fill-white {
   padding-bottom: 3rem;
 }
 
+.education-year{
+  padding-bottom: 10px;
+}
+
 .education .container {
   max-width: 900px;
 }
@@ -794,9 +798,14 @@ header .seperator-skew svg .fill-white {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0.15rem 0.6rem rgba(18, 20, 20, 0.212);
   padding: 40px;
-  border-radius: 3px;
+  background: rgb(255,255,255);
+  background: linear-gradient(145deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px outset rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -1065,7 +1074,7 @@ header .seperator-skew svg .fill-white {
 }
 
 .footer {
-  background: #181a1b;
+  background: #1d2026;
   padding: 1.5rem 0;
   color: white;
 }
